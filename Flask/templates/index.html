@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Recommendation System</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            inline-size: 100%;
+            background-color: black;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            padding: 20px;
+        }
+        header div {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px; /* Increase horizontal padding */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add transition for hover effect */
+        }
+        button:hover {
+            background-color: #fff; /* white background on hover */
+            color: black; /* black text-color on hover */
+            border: 1px solid black;
+        }
+        .middle-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            inline-size: 100%;
+            padding-top: 20px;
+        }
+        .middle-content .image{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .middle-content .image img{
+            width: 60%;
+            border-radius: 40px;
+        }
+        .middle-content .text {
+            inline-size: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Recommendation System</h1>
+        <div>
+            <button onclick="location.href='/'">Home</button>
+            <button onclick="location.href='/recommend'">Recommend</button>
+        </div>
+    </header>
+    <div class="middle-content">
+        <div class="image">
+            <img src="E:\Restaurant-recommendation-ds\Flask\static\image.jpg" alt="Your Image">
+        </div>
+        <div class="text">
+            <h2>Build Recommendation System with ease!!</h2>
+            <p>In today's era of information overload, individuals rely on various strategies to decide what to purchase, how to spend their free time, and where to go. Recommender systems help automate these decision-making processes, aiming to suggest affordable dining options. This project focuses on developing a content-based recommender system that, upon entering the name of a restaurant, analyzes reviews of other establishments and recommends those with similar feedback. The suggestions are then sorted based on their ratings, with the highest-rated options appearing first.
+            </p>
+            <h2>Test the System</h2>
+            <button onclick="location.href='/recommend'">Recommend</button>
+        </div>
+        
+    </div>
+</body>
+</html>
